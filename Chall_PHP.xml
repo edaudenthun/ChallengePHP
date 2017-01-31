@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.5.4.1deb2ubuntu2
+- https://www.phpmyadmin.net
+-
+- Client :  localhost
+- Généré le :  Mar 31 Janvier 2017 à 08:34
+- Version du serveur :  5.6.32-1+deb.sury.org~xenial+0.1
+- Version de PHP :  7.0.15-1+deb.sury.org~xenial+1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="Chall_PHP" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="challPHP">
+                CREATE TABLE `challPHP` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `pseudo` varchar(100) NOT NULL,
+                  `mdp` varchar(100) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="custo">
+                CREATE TABLE `custo` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `Title` varchar(100) NOT NULL,
+                  `Navbar` varchar(100) NOT NULL,
+                  `Urls` varchar(100) NOT NULL,
+                  `button` varchar(100) NOT NULL,
+                  `font` varchar(30) NOT NULL,
+                  `arrow` int(11) NOT NULL,
+                  `fixed` int(11) NOT NULL,
+                  `snow` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="custohisto">
+                CREATE TABLE `custohisto` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `titlehisto` varchar(100) NOT NULL,
+                  `navbarhisto` varchar(100) NOT NULL,
+                  `urlhisto` varchar(100) NOT NULL,
+                  `buttonhisto` varchar(100) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="form">
+                CREATE TABLE `form` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `Avatar` varchar(100) NOT NULL,
+                  `pseudo` varchar(30) NOT NULL,
+                  `prenom` varchar(30) NOT NULL,
+                  `jeux` varchar(30) NOT NULL,
+                  `mail` varchar(50) NOT NULL,
+                  `naissance` varchar(10) NOT NULL,
+                  `valider` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de données :  'Chall_PHP'
+    -->
+    <database name="Chall_PHP">
+        <!-- Table challPHP -->
+        <table name="challPHP">
+            <column name="id">1</column>
+            <column name="pseudo">Megami</column>
+            <column name="mdp">1910</column>
+        </table>
+        <!-- Table custo -->
+        <table name="custo">
+            <column name="id">1</column>
+            <column name="Title">rgba(255,0,0,0.5)</column>
+            <column name="Navbar">rgba(255,0,0,0.5)</column>
+            <column name="Urls">black</column>
+            <column name="button">lightgrey</column>
+            <column name="font">Lemonada</column>
+            <column name="arrow">0</column>
+            <column name="fixed">1</column>
+            <column name="snow">1</column>
+        </table>
+        <!-- Table custohisto -->
+        <table name="custohisto">
+            <column name="id">20</column>
+            <column name="titlehisto">rgba(255,0,0,0.5)</column>
+            <column name="navbarhisto">rgba(255,0,0,0.5)</column>
+            <column name="urlhisto">black</column>
+            <column name="buttonhisto">lightgrey</column>
+        </table>
+        <table name="custohisto">
+            <column name="id">21</column>
+            <column name="titlehisto"></column>
+            <column name="navbarhisto">rgba(255,0,0,0.5)</column>
+            <column name="urlhisto"></column>
+            <column name="buttonhisto"></column>
+        </table>
+        <!-- Table form -->
+        <table name="form">
+            <column name="id">14</column>
+            <column name="Avatar">Elise2.jpg</column>
+            <column name="pseudo">Megami</column>
+            <column name="prenom">Elise</column>
+            <column name="jeux">Overwatch</column>
+            <column name="mail">edaudenthun@gmail.com</column>
+            <column name="naissance">27/12/1994</column>
+            <column name="valider">1</column>
+        </table>
+        <table name="form">
+            <column name="id">22</column>
+            <column name="Avatar">untitled.png</column>
+            <column name="pseudo">Enessi</column>
+            <column name="prenom">Alexandre</column>
+            <column name="jeux">Zelda</column>
+            <column name="mail">amadet@outlook.fr</column>
+            <column name="naissance">22/09/1994</column>
+            <column name="valider">1</column>
+        </table>
+    </database>
+</pma_xml_export>
